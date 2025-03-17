@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            background: #444;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #00ff00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .main-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的网站</h1>
+        <p>一个简单的网页示例</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于我们</a></li>
+            <li><a href="#services">服务项目</a></li>
+            <li><a href="#contact">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>最新消息</h2>
+            <p>欢迎访问我们的网站！这里是一个简单的HTML模板示例。</p>
+            
+            <section>
+                <h3>关于我们</h3>
+                <p>我们是一家致力于提供优质服务的创新公司。</p>
+            </section>
+
+            <section>
+                <h3>服务项目</h3>
+                <ul>
+                    <li>网页设计</li>
+                    <li>网站开发</li>
+                    <li>数字营销</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>联系我们</h3>
+                <p>Email: contact@example.com</p>
+                <p>电话: (123) 456-7890</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 我的网站 保留所有权利</p>
+    </footer>
+</body>
+</html>
